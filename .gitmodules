@@ -1,0 +1,3 @@
+[submodule "modules/MyModule"]
+	path = modules/MyModule
+	url = https://github.com/Stas2404/MyModule.git
