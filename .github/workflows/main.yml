@@ -1,0 +1,22 @@
+name: CI for Student Project
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-test:
+    name: Build and Test Job
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run build script
+        run: echo "Збірка проекту розпочата..."
+
+      - name: List files
+        run: ls -la
